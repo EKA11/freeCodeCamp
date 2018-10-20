@@ -166,22 +166,22 @@ void deleteNode(struct node* root, int data){
     else if (key > root->key) 
         root->right = deleteNode(root->right, key); 
 
-    else
+    else                                                 //If the element is found
     { 
-        if (root->left == NULL) 
+        if (root->left == NULL)                          //if element has only one child(right)
         { 
             struct node *temp = root->right; 
             free(root); 
             return temp; 
         } 
-        else if (root->right == NULL) 
+        else if (root->right == NULL)                     //if element has only one child(left)
         { 
             struct node *temp = root->left; 
             free(root); 
             return temp; 
         } 
   
-        struct node* temp = minValueNode(root->right); 
+        struct node* temp = minValueNode(root->right);     //To find inorder successor
  
         root->key = temp->key; 
 

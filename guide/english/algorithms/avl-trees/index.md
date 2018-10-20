@@ -27,6 +27,16 @@ AVL trees have a worst case lookup, insert and delete time of O(log n).
 
 ![AVL Tree Left Rotation](https://raw.githubusercontent.com/HebleV/valet_parking/master/images/avl_left_rotation.jpg)
 
+### LR Rotation
+
+![AVL Tree Left Rotation](http://btechsmartclass.com/DS/images/LR%20Rotation.png)
+
+### RL Rotation
+
+![AVL Tree Left Rotation](http://btechsmartclass.com/DS/images/RL%20Rotation.png)
+
+
+
 ### AVL Insertion Process
 
 You will do an insertion similar to a normal Binary Search Tree insertion. After inserting, you fix the AVL property using left or right rotations.
